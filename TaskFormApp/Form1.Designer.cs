@@ -32,6 +32,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnCounter = new System.Windows.Forms.Button();
             this.tbCounter = new System.Windows.Forms.TextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btnReadFile
@@ -69,12 +70,21 @@
             this.tbCounter.Size = new System.Drawing.Size(100, 20);
             this.tbCounter.TabIndex = 2;
             // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(344, 56);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(176, 203);
+            this.richTextBox2.TabIndex = 1;
+            this.richTextBox2.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 290);
+            this.ClientSize = new System.Drawing.Size(532, 290);
             this.Controls.Add(this.tbCounter);
+            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnCounter);
             this.Controls.Add(this.btnReadFile);
@@ -91,6 +101,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnCounter;
         private System.Windows.Forms.TextBox tbCounter;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 
