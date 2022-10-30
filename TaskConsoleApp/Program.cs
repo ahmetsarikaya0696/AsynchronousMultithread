@@ -119,3 +119,9 @@
 // Threadi bloklamaz
 //Task.Delay(1000);
 #endregion
+
+#region Run
+// Kodun başka bir threadde çalışmasını sağlar
+// CPU ' yu yoracak karmaşık işlemler için ayrı bir thread açılabilir.
+// TaskThreadApp ' te bir örnek gösterilmiştir.
+#endregion
