@@ -127,20 +127,19 @@
 #endregion
 
 #region StartNew
+//using TaskConsoleApp;
 
-using TaskConsoleApp;
+//var myTask = Task.Factory.StartNew((obj) =>
+//{
+//    Console.WriteLine("MyTask");
+//    var status = obj as Status;
+//    if (status != null)
+//    {
+//        status.ThreadId = Thread.CurrentThread.ManagedThreadId;
+//    }
+//}, new Status() { Date = DateTime.Now });
 
-var myTask = Task.Factory.StartNew((obj) =>
-{
-    Console.WriteLine("MyTask");
-    var status = obj as Status;
-    if (status != null)
-    {
-        status.ThreadId = Thread.CurrentThread.ManagedThreadId;
-    }
-}, new Status() { Date = DateTime.Now });
-
-await myTask;
-Status s = myTask.AsyncState as Status;
-Console.WriteLine($"ThreadId : {s.ThreadId}\r\nDate : {s.Date}");
+//await myTask;
+//Status s = myTask.AsyncState as Status;
+//Console.WriteLine($"ThreadId : {s.ThreadId}\r\nDate : {s.Date}");
 #endregion
