@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskConsoleApp", "TaskConso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskThreadApp", "TaskThreadApp\TaskThreadApp.csproj", "{A50C6F83-4C97-4D38-900F-9B2205888680}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskAppWithoutTopLevelStatements", "TaskAppWithoutTopLevelStatements\TaskAppWithoutTopLevelStatements.csproj", "{EB630749-41B1-4FE4-A101-7D3152C4832E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskAppWithoutTopLevelStatements", "TaskAppWithoutTopLevelStatements\TaskAppWithoutTopLevelStatements.csproj", "{EB630749-41B1-4FE4-A101-7D3152C4832E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskCancellationFormApp", "TaskCancellationFormApp\TaskCancellationFormApp.csproj", "{27E09B07-F41A-4877-A49C-D2067FCE8899}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{EB630749-41B1-4FE4-A101-7D3152C4832E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB630749-41B1-4FE4-A101-7D3152C4832E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB630749-41B1-4FE4-A101-7D3152C4832E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27E09B07-F41A-4877-A49C-D2067FCE8899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E09B07-F41A-4877-A49C-D2067FCE8899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E09B07-F41A-4877-A49C-D2067FCE8899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E09B07-F41A-4877-A49C-D2067FCE8899}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
