@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskCancellationFormApp", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskResult", "TaskResult\TaskResult.csproj", "{2A257749-DEB1-4542-BF71-A6BFA7C88268}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFlow", "TaskFlow\TaskFlow.csproj", "{4E1F8224-1A62-4774-9E79-BF57932F1B00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{2A257749-DEB1-4542-BF71-A6BFA7C88268}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A257749-DEB1-4542-BF71-A6BFA7C88268}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A257749-DEB1-4542-BF71-A6BFA7C88268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1F8224-1A62-4774-9E79-BF57932F1B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1F8224-1A62-4774-9E79-BF57932F1B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1F8224-1A62-4774-9E79-BF57932F1B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1F8224-1A62-4774-9E79-BF57932F1B00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
