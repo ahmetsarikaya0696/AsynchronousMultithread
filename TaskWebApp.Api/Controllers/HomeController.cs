@@ -7,13 +7,30 @@ namespace TaskWebApp.Api.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
-        [HttpGet]
-        public async Task<IActionResult> GetContentAsync()
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
         {
-            Thread.Sleep(5000);
-            var myTask = new HttpClient().GetStringAsync("https://www.google.com");
-            var data = await myTask;
-            return Ok(data);
+            _logger = logger;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetContentAsync(CancellationToken cancellationToken)
+        {
+            try
+            {
+                _logger.LogInformation("İstek başladı");
+                await Task.Delay(5000, cancellationToken);
+                var myTask = new HttpClient().GetStringAsync("https://www.google.com");
+                var data = await myTask;
+                _logger.LogInformation("İstek bitti");
+                return Ok(data);
+            }
+            catch (TaskCanceledException ex)
+            {
+                _logger.LogInformation(ex.Message);
+                return BadRequest();
+            }
         }
 
     }
