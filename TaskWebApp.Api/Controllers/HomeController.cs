@@ -20,6 +20,7 @@ namespace TaskWebApp.Api.Controllers
             try
             {
                 _logger.LogInformation("İstek başladı");
+                // token asenkron olarak gerçekleşen bir metoda verilebilir ya da asenkron olmayan durumlarda manuel olarak token.throw... ile hata fırlatılabilir.
                 await Task.Delay(5000, cancellationToken);
                 var myTask = new HttpClient().GetStringAsync("https://www.google.com");
                 var data = await myTask;
