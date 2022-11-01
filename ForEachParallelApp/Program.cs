@@ -6,8 +6,22 @@ namespace ForEachParallelApp
     {
         static void Main(string[] args)
         {
-            ParallelForEach1();
-            ParallelForEach2();
+            //ParallelForEach1();
+            //ParallelForEach2();
+
+            RaceConditionExample();
+        }
+
+        private static void RaceConditionExample()
+        {
+            int value = 0;
+
+            Parallel.ForEach(Enumerable.Range(1, 10000000).ToList(), (x) =>
+            {
+                value = x;
+            });
+
+            Console.WriteLine(value);
         }
 
         private static void ParallelForEach2()
