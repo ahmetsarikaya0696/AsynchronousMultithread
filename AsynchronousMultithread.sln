@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskResult", "TaskResult\Ta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskFlow", "TaskFlow\TaskFlow.csproj", "{4E1F8224-1A62-4774-9E79-BF57932F1B00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEachParallelApp", "ForEachParallelApp\ForEachParallelApp.csproj", "{504990C7-93B2-4416-8C4C-95C7CC8F69AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForEachParallelApp", "ForEachParallelApp\ForEachParallelApp.csproj", "{504990C7-93B2-4416-8C4C-95C7CC8F69AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelForForEachCancellationTokenApp", "ParallelForForEachCancellationTokenApp\ParallelForForEachCancellationTokenApp.csproj", "{17DA82BD-5B95-4A1B-AF49-40B554B52199}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{504990C7-93B2-4416-8C4C-95C7CC8F69AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{504990C7-93B2-4416-8C4C-95C7CC8F69AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{504990C7-93B2-4416-8C4C-95C7CC8F69AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17DA82BD-5B95-4A1B-AF49-40B554B52199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17DA82BD-5B95-4A1B-AF49-40B554B52199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17DA82BD-5B95-4A1B-AF49-40B554B52199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17DA82BD-5B95-4A1B-AF49-40B554B52199}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
