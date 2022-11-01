@@ -8,8 +8,28 @@ namespace ForEachParallelApp
         {
             //ParallelForEach1();
             //ParallelForEach2();
+            //RaceConditionExample();
 
-            RaceConditionExample();
+            ParallelFor1();
+
+        }
+
+        private static void ParallelFor1()
+        {
+            long filesByte = 0;
+
+            Console.Write("Path : ");
+            string picturesPath = Console.ReadLine();
+            var files = Directory.GetFiles(picturesPath);
+
+            Parallel.For(0, files.Length, (index) =>
+            {
+                Console.WriteLine($"Thread Id : {Thread.CurrentThread.ManagedThreadId}");
+                FileInfo fileInfo = new FileInfo(files[index]);
+                Interlocked.Add(ref filesByte, fileInfo.Length); // Race Condition durumunu önler
+            });
+
+            Console.WriteLine($"Total File Byte : {filesByte}");
         }
 
         private static void RaceConditionExample()
