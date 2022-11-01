@@ -9,9 +9,40 @@ namespace ForEachParallelApp
             //ParallelForEach1();
             //ParallelForEach2();
             //RaceConditionExample();
+            //ParallelFor1();
+            //MultithreadTotalForEach();
+            MultithreadTotalFor();
+        }
 
-            ParallelFor1();
+        private static void MultithreadTotalFor()
+        {
+            long filesByte = 0;
 
+            Parallel.For(0, 100, () => 0, (x, loop, subTotal) =>
+            {
+                subTotal += x;
+                return subTotal;
+            }, (y) => Interlocked.Add(ref filesByte, y));
+
+            Console.WriteLine($"Total File Byte : {filesByte}");
+        }
+
+        private static void MultithreadTotalForEach()
+        {
+            /* 
+             * Thread 4 e bölünür
+             * Her biri kendi içinde subtotal ' ı bulur
+             * Bulunan subtotal filesByte ' a eklenir.
+             */
+            long filesByte = 0;
+
+            Parallel.ForEach(Enumerable.Range(1, 100).ToList(), () => 0, (x, loop, subTotal) =>
+            {
+                subTotal += x;
+                return subTotal;
+            }, (y) => Interlocked.Add(ref filesByte, y));
+
+            Console.WriteLine($"Total File Byte : {filesByte}");
         }
 
         private static void ParallelFor1()
