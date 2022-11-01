@@ -26,7 +26,7 @@ namespace ForEachParallelApp
                 Interlocked.Add(ref filesByte, fileInfo.Length); // Race Condition durumunu önler
             });
 
-            Console.WriteLine("İşlem bitti");
+            Console.WriteLine($"Total File Byte : {filesByte}");
         }
 
         private static void ParallelForEach1()
