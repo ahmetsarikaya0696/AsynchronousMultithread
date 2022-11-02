@@ -64,7 +64,8 @@ namespace ParallelForForEachCancellationTokenApp
                         string content = httpClient.GetStringAsync(url).Result;
                         string data = $"Url : {url} Length : {content.Length}";
 
-                        _cancellationTokenSource.Token.ThrowIfCancellationRequested();
+                        parallelOptions.CancellationToken.ThrowIfCancellationRequested(); // _cancellationtokensource ' a erişemediğimiz zaman bu şekilde kullanılır.
+                        //_cancellationTokenSource.Token.ThrowIfCancellationRequested();
                         listBox1.Invoke((MethodInvoker)delegate { listBox1.Items.Add(data); });
                     });
                 }
