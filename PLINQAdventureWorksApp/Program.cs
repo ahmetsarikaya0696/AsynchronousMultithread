@@ -18,6 +18,7 @@ namespace PLINQAdventureWorksApp
                 .AsParallel()
                 .WithDegreeOfParallelism(2)
                 .WithExecutionMode(ParallelExecutionMode.ForceParallelism)
+                .AsOrdered()
                 .Where(p => p.ListPrice > 10M).Take(10);
 
 
