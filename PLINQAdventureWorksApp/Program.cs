@@ -17,6 +17,7 @@ namespace PLINQAdventureWorksApp
             var product2 = context.Products
                 .AsParallel()
                 .WithDegreeOfParallelism(2)
+                .WithExecutionMode(ParallelExecutionMode.ForceParallelism)
                 .Where(p => p.ListPrice > 10M).Take(10);
 
 
