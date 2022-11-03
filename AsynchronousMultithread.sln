@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForEachParallelApp", "ForEa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelForForEachCancellationTokenApp", "ParallelForForEachCancellationTokenApp\ParallelForForEachCancellationTokenApp.csproj", "{17DA82BD-5B95-4A1B-AF49-40B554B52199}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLINQApp", "PLINQApp\PLINQApp.csproj", "{FAF70E36-4384-468F-A907-6111183E35EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLINQApp", "PLINQApp\PLINQApp.csproj", "{FAF70E36-4384-468F-A907-6111183E35EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLINQAdventureWorksApp", "PLINQAdventureWorksApp\PLINQAdventureWorksApp.csproj", "{2184B300-8B6F-4E59-8F64-553C96CA4257}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{FAF70E36-4384-468F-A907-6111183E35EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAF70E36-4384-468F-A907-6111183E35EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAF70E36-4384-468F-A907-6111183E35EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2184B300-8B6F-4E59-8F64-553C96CA4257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2184B300-8B6F-4E59-8F64-553C96CA4257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2184B300-8B6F-4E59-8F64-553C96CA4257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2184B300-8B6F-4E59-8F64-553C96CA4257}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,7 +3,7 @@
     internal class Program
     {
         public static string CacheData { get; set; }
-        static async void Main(string[] args)
+        static async Task Main(string[] args)
         {
             CacheData = await GetDataAsync();
             Console.WriteLine(CacheData);
