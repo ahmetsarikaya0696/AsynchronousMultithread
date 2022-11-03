@@ -14,7 +14,10 @@ namespace PLINQAdventureWorksApp
                            select p).Take(10);
 
             // Aynı kodun farklı yazım şekli
-            var product2 = context.Products.AsParallel().Where(p => p.ListPrice > 10M).Take(10);
+            var product2 = context.Products
+                .AsParallel()
+                .WithDegreeOfParallelism(2)
+                .Where(p => p.ListPrice > 10M).Take(10);
 
 
             product.ForAll(p =>
